@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MS & HSD Calcualtor</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="upper-row">
+                    <label for="ms">MS</label>
+                    <input class="petrol-rate" type="number" name="ms" value="" disabled>
+                </td>
+                <td class="upper-row">
+                    <label for="hsd">HSD</label>
+                    <input class="diesel-rate" type="number" name="hsd" value="" disabled>
+                </td>
+                <td class="upper-row">
+                    <button class="change">Change</button>
+                    <button class="save">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>MS</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="petrol1-end" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="petrol1-start" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ltr.</td>
+                            <td>
+                                <p class="petrol1-liter"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="petrol1-amount"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>HSD</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel1-end" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel1-start" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ltr.</td>
+                            <td>
+                                <p class="diesel1-liter"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="diesel1-amount"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>HSD</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel2-end" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel2-start" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ltr.</td>
+                            <td>
+                                <p class="diesel2-liter"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="diesel2-amount"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>2T</th>
+                        </tr>
+                        <tr>
+                            <td>Pcs.</td>
+                            <td>
+                                <input class="tuti-piece" type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="tuti-amount"></p>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="2">
+                                <button class="clear">Clear</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="2">
+                                <button class="calculate">Calculate</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>HSD</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel3-end" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel3-start" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ltr.</td>
+                            <td>
+                                <p class="diesel3-liter"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="diesel3-amount"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>HSD</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel4-end" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="diesel4-start" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ltr.</td>
+                            <td>
+                                <p class="diesel4-liter"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amt.</td>
+                            <td>
+                                <p class="diesel4-amount"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="down-row">
+                    <label>Total Amount : </label>
+                    <span class="total-amount"></span>
+                </td>
+                <td class="down-row">
+                    <label>Total HSD Ltr.</label>
+                    <span class="total-diesel-liter"></span>
+                </td>
+                <td class="down-row">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="payment">
+        <table>
+            <tr>
+                <td>
+                    <div class="cash">
+                        Cash <br>
+                        <button class="add">+</button>
+                        <input class="amt" type="number">
+                    </div>
+                    <div class="phonePe">
+                        Phone Pe<br>
+                        <button class="add">+</button>
+                        <input class="amt" type="number">
+                    </div>
+                    <div class="sbiPos">
+                        SBI POS<br>
+                        <button class="add">+</button>
+                        <input class="amt" type="number">
+                    </div>
+                    <div class="sbi">
+                        SBI<br>
+                        <button class="add">+</button>
+                        <input class="amt" type="number">
+                    </div>
+                    <div class="others">
+                        Others<br>
+                        <button class="add">+</button>
+                        <input class="amt" type="number">
+                    </div>
+                </td>
+                <td>
+                    <div class="result">
+                        <button class="addAll">Add</button><br>
+                        <label>Total : </label><span class="total"></span><br><br>
+                        <label>Adjustment Amt : </label><span class="extra"></span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
