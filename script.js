@@ -94,11 +94,11 @@ calculateButton.addEventListener("click", () => {
     diesel3Liter.innerHTML = d3l.toFixed(2);
     diesel4Liter.innerHTML = d4l.toFixed(2);
 
-    petrol1Amount.innerHTML = p1l + " x " + pr + " = " + (p1l * pr).toFixed(2);
-    diesel1Amount.innerHTML = d1l + " x " + dr + " = " + (d1l * dr).toFixed(2);
-    diesel2Amount.innerHTML = d2l + " x " + dr + " = " + (d2l * dr).toFixed(2);
-    diesel3Amount.innerHTML = d3l + " x " + dr + " = " + (d3l * dr).toFixed(2);
-    diesel4Amount.innerHTML = d4l + " x " + dr + " = " + (d4l * dr).toFixed(2);
+    petrol1Amount.innerHTML = p1l.toFixed(2) + " x " + pr.toFixed(2) + " = " + (p1l * pr).toFixed(2);
+    diesel1Amount.innerHTML = d1l.toFixed(2) + " x " + dr.toFixed(2) + " = " + (d1l * dr).toFixed(2);
+    diesel2Amount.innerHTML = d2l.toFixed(2) + " x " + dr.toFixed(2) + " = " + (d2l * dr).toFixed(2);
+    diesel3Amount.innerHTML = d3l.toFixed(2) + " x " + dr.toFixed(2) + " = " + (d3l * dr).toFixed(2);
+    diesel4Amount.innerHTML = d4l.toFixed(2) + " x " + dr.toFixed(2) + " = " + (d4l * dr).toFixed(2);
 
     tutiAmount.innerHTML = tuti + " x " + tr + " = " + tutiA.toFixed(2);
 

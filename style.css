@@ -36,6 +36,7 @@ input {
 .diesel3-liter,
 .diesel4-liter,
 .total-diesel-liter {
+    font-size: x-large;
     color: red;
 }
 
