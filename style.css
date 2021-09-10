@@ -42,11 +42,11 @@ input {
 
 p,
 span {
-    padding: 1px;
+    padding: 2px;
     margin: 5px;
     font-weight: bold;
     border: 1px solid black;
-    font-size: x-large;
+    font-size: large;
 }
 
 table {
